@@ -23,7 +23,7 @@ public class UserController {
 
     @RequestMapping(value = "/show", method = RequestMethod.GET)
     public String sayHello() {
-        return "hello";
+        return "hello   666666 ";
     }
 
     /**
@@ -104,7 +104,6 @@ public class UserController {
 
     /**
      * 根据id查询年龄的信息
-     *
      * @param id 用户id
      * @throws UserException 异常
      */

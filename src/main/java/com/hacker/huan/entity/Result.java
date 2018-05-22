@@ -1,6 +1,8 @@
 package com.hacker.huan.entity;
 
-import java.util.HashMap;
+
+import lombok.Data;
+import lombok.ToString;
 
 /**
  * http返回格式
@@ -8,6 +10,8 @@ import java.util.HashMap;
  * @author wqh
  * @date 18-5-6
  */
+@Data
+@ToString
 public class Result<T> {
     /**
      * 错误状态码
@@ -22,27 +26,4 @@ public class Result<T> {
      */
     private T data;
 
-    public Integer getErrorCode() {
-        return errorCode;
-    }
-
-    public void setErrorCode(Integer errorCode) {
-        this.errorCode = errorCode;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
 }
